@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma_penzai"
+version = "0.1.0"
+description = "Gemma models implemented based on Penzai"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Xiangming Gu", email = "xiangming@google.com"},
+  {name = "Larisa Markeeva", email = "lmarkeeva@google.com"},
+  {name = "Alex Vitvitskyi", email = "avlife@google.com"},
+  {name = "Petar Veličković", email = "petarv@google.com"},
+]
+keywords = ["jax", "penzai", "gemma", "llm", "transformer", "multi-modal"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+
+# These install automatically when someone pip installs your package
+dependencies = [
+    "penzai@git+https://github.com/google-deepmind/penzai.git",
+    "gemma",
+    "jax>=0.8.0",
+    "kagglehub",
+    "orbax",
+    "jaxtyping",
+    "einops",
+    "etils",
+    "pillow",
+    "sentencepiece",
+]
+
+[project.urls]
+homepage = "https://github.com/guxm2021/gemma_penzai"
+repository = "https://github.com/guxm2021/gemma_penzai"
+
+[tool.setuptools]
+packages = ["gemma_penzai"]
