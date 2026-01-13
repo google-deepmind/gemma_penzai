@@ -72,7 +72,7 @@ treescope.basic_interactive_setup(autovisualize_arrays=True)
 ## Using the package
 
 We provide notebooks inside `./notebooks` about the basic usage of Gemma 3,
-including the multimodal case.
+including the multimodal case. Inside the folder `./notebooks/mech_interp`, we also provide tutorials for [attention sink](https://arxiv.org/abs/2309.17453)), [logit-lens](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens), [gemma scope 1](https://deepmind.google/models/gemma/gemma-scope/) and [2](https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/).
 
 ## Acknowledgements
 
